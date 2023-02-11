@@ -1,0 +1,62 @@
+.aunk {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 64px 0px 12px;
+    width: 400px;
+}
+
+#waz {
+    color: white;
+    font-size: 16px;
+}
+
+.identifier {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.identifier img {
+    border-radius: 100%;
+    width: 40px;
+
+}
+
+/* Below of Input */
+#inputRegister {
+    width: 400px;
+    padding: 6px 12px;
+    margin: 12px 0px;
+    border-radius: 12px;
+}
+
+#btnSubmit {
+    border: none;
+    outline: none;
+    padding: 6px 12px;
+    border-radius: 300px;
+    min-width: 120px;
+    margin: 12px 0px;
+}
+
+#btnSubmit:hover {
+    background-color: rgb(204, 204, 204);
+    cursor: pointer;
+}
+
+#cardList {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
