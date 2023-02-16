@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client'
 import { Home } from './pages/Home'
 import { Contact } from './pages/Contact'
 import { App } from './App'
-import {ErrorPage } from './components/errorPage/error'
+import { Nested } from './pages/Nested/nested'
+import { ErrorPage } from './components/errorPage/error'
 import './css/global.css'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage/>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />
+      },
+      {
+        path: "nested/:id",
+        element: <Nested/>
       }
     ]
   }
