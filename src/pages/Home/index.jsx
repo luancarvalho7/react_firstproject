@@ -1,6 +1,8 @@
 import './style.css'
 import React, { useState, useEffect } from 'react'
 import { Card } from '../../components/card'
+import { TestSwiper } from '../../components/swiper/swiper'
+
 export function Home() {
   const [studentName, setStudentName] = useState('user')
   const [students, setStudents] = useState([]) //Resultado Final, Function  -------- Array Começa vazio
@@ -48,12 +50,11 @@ export function Home() {
             <img src={userInfo.pfp} alt="Profile Picture" />
           </div>
         </header>
-
         <input type="text" id="inputRegister" onChange={e => setStudentName(e.target.value)} />
         <button id="btnSubmit" onClick={handleAddStudent}>Add {studentName}</button>
         <section id='cardList'>
-          <Card name='Chimpanski'/>
-          <Card name='Luan'/>
+          <Card name='Chimpanski' />
+          <Card name='Luan' />
           {
             students.map(student => <Card
               key={student.time}

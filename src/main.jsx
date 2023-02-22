@@ -5,6 +5,7 @@ import { Contact } from './pages/Contact'
 import { App } from './App'
 import { Nested } from './pages/Nested/nested'
 import { ErrorPage } from './components/errorPage/error'
+import { TestPage } from './pages/Test/test'
 import './css/global.css'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <TestPage />
       },
       {
         path: "/contact",
